@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import UseEffectHook from "./components/UseEffectHook";
+import UseReducerHook from "./components/UseReducerHook";
+import UseStateHook from "./components/UseStateHook";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="overflow-hidden">
+      <h1 className="w-full bg-violet-700 text-white font-bold p-8 border-4 border-black text-center">
+        Welcome to all of the React Hooks!!
+      </h1>
+
+      <UseStateHook />
+
+      <UseReducerHook />
+
+      <UseEffectHook />
     </div>
   );
 }
